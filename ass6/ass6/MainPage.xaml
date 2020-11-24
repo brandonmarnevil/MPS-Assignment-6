@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ass6.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+
+            <Label Text="BANK XAML" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <!--deposit side -->
+        <Entry x:Name="Depositamount" Placeholder="Enter amount to deposit " Keyboard="Numeric" />
+        <Entry x:Name="Reasondepositamount" Placeholder="Enter reason" />
+        <Button Text="Deposit" Clicked="DepositButton_Clicked"/>
+        <!--Withdraw side -->
+        <Entry x:Name="Withdrawamount" Placeholder="enter amount to withdraw " Keyboard="Numeric" />
+        <Entry x:Name="Reasonwithdrawamount" Placeholder="enter reason" />
+        <Button Text="Withdraw" Clicked="WithdrawButton_Clicked"/>
+
+        <!--History side -->
+        <Button Text="History" Clicked="HistoryButton_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
